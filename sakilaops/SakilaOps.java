@@ -11,7 +11,8 @@ public class SakilaOps {
      Connection con = null;
      try {
          Class.forName("com.mysql.cj.jdbc.Driver");
-         con = DriverManager.getConnection(connectionURL, "root", "318180700");
+         //Type your connections credentials below:
+         con = DriverManager.getConnection(connectionURL, "root", "XXXXXX");
          MenuManager.runMenu(con);
          con.close();
      } catch (SQLException | ClassNotFoundException e) {
